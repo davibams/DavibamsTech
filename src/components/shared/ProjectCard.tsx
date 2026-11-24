@@ -27,7 +27,7 @@ export default function ProjectCard({
           src={image}
           alt={title}
           fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
+          className="object-contain bg-slate-100 transition-transform duration-500 group-hover:scale-105"
         />) : <div className="flex min-h-48 h-full items-center justify-center bg-gradient-to-br from-slate-950 to-blue-900 p-8 text-center text-2xl font-bold text-white">{title}</div>}
       </div>
 
