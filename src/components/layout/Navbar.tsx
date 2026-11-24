@@ -1,34 +1,3 @@
-import Logo from "@/components/shared/Logo";
-import Button from "@/components/shared/Button";
-import { navigation } from "@/data/navigation";
-import Link from "next/link";
-
-export default function Navbar() {
-  return (
-    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/90 backdrop-blur-md">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
-        <Logo />
-
-        <nav className="hidden items-center gap-8 md:flex">
-          {navigation.map((item) => (
-            <Link
-              key={item.label}
-              href={item.href}
-              className="text-sm font-medium text-slate-600 transition hover:text-blue-600"
-            >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="hidden md:flex">
-          <Button href="https://wa.me/2347013177039">
-            Chat on WhatsApp
-          </Button>
-        </div>
-
-        {/* Mobile menu comes next */}
-      </div>
-    </header>
-  );
-}
+import Logo from '@/components/shared/Logo';
+import Link from 'next/link';
+export default function Navbar(){return <header className="sticky top-0 z-50 border-b border-slate-200 bg-white"><div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-3 px-4 py-3 sm:px-6"><Logo/><a href="https://wa.me/2347013177039" className="rounded-lg bg-emerald-700 px-3 py-2 text-sm font-semibold text-white lg:order-3">WhatsApp</a><nav aria-label="Main navigation" className="order-3 flex w-full justify-between gap-3 border-t border-slate-100 pt-3 text-sm font-semibold text-slate-700 lg:order-2 lg:w-auto lg:gap-8 lg:border-0 lg:pt-0"><Link href="/">Home</Link><Link href="/#services">Services</Link><Link href="/projects">Projects</Link><Link href="/#contact">Contact</Link></nav></div></header>}

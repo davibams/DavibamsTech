@@ -12,11 +12,11 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Davibams Tech",
-    template: "%s | Davibams Tech",
+    default: "Davibams Tech Solutions",
+    template: "%s | Davibams Tech Solutions",
   },
   description:
-    "Davibams Tech builds custom software, websites and mobile applications that help businesses grow.",
+    "Davibams Tech Solutions builds custom software, websites and mobile applications that help businesses grow.",
 };
 
 export default function RootLayout({
@@ -32,6 +32,7 @@ export default function RootLayout({
         <main>{children}</main>
 
         <Footer />
+        <a href="https://wa.me/2347013177039" aria-label="Chat with Davibams Tech Solutions on WhatsApp" className="fixed bottom-4 right-4 z-40 rounded-full bg-emerald-700 px-5 py-3 text-sm font-bold text-white shadow-lg">WhatsApp</a>
       </body>
     </html>
   );

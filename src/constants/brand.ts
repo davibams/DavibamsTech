@@ -1,5 +1,5 @@
 export const BRAND = {
-  name: "Davibams Tech",
+  name: "Davibams Tech Solutions",
 
   tagline: "Turning Ideas Into Reliable Digital Solutions",
 

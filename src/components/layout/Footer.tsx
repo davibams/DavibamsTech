@@ -27,19 +27,19 @@ export default function Footer() {
 
             <ul className="space-y-3">
               <li>
-                <Link href="#services" className="hover:text-white transition">
+                <Link href="/#services" className="hover:text-white transition">
                   Services
                 </Link>
               </li>
 
               <li>
-                <Link href="#projects" className="hover:text-white transition">
+                <Link href="/#projects" className="hover:text-white transition">
                   Projects
                 </Link>
               </li>
 
               <li>
-                <Link href="#contact" className="hover:text-white transition">
+                <Link href="/#contact" className="hover:text-white transition">
                   Contact
                 </Link>
               </li>
@@ -100,7 +100,7 @@ export default function Footer() {
         </div>
 
         <div className="border-t border-slate-800 py-6 text-center text-sm text-slate-500">
-          © {new Date().getFullYear()} Davibams Tech. All rights reserved.
+          © {new Date().getFullYear()} Davibams Tech Solutions. All rights reserved.
         </div>
       </Container>
     </footer>

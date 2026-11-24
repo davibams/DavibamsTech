@@ -7,13 +7,13 @@ import { featuredProjects } from "@/data/home/projects";
 
 export default function FeaturedProjects() {
   return (
-    <Section>
+    <Section id="projects">
       <Container>
 
         <SectionHeading
           eyebrow="CASE STUDIES"
-          title="Software We've Built"
-          description="Explore a selection of projects that demonstrate how we solve real business problems with modern software."
+          title="Selected Projects"
+          description="Client websites and software products, including projects currently in development."
         />
 
         <div className="grid gap-8 lg:grid-cols-2">

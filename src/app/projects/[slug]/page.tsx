@@ -27,7 +27,7 @@ export default async function ProjectPage({
   }
 
   return (
-  <main>
+  <div>
     <Hero
   title={project.title}
   category={project.category}
@@ -50,9 +50,8 @@ export default async function ProjectPage({
   solution={project.solution}
 />
 
-<TechStack
-  technologies={project.technologies}
-/>
+{project.technologies.length > 0 && <TechStack technologies={project.technologies} />}
+{project.liveUrl && <div className="mx-auto max-w-7xl px-6 py-8"><a className="font-semibold text-blue-700 underline" href={project.liveUrl} target="_blank" rel="noopener noreferrer">Visit live website</a></div>}
 
 {project.gallery && (
   <Gallery
@@ -62,6 +61,6 @@ export default async function ProjectPage({
 )}
 
 <CTA />
-  </main>
+  </div>
 );
 }

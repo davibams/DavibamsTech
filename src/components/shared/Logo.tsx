@@ -17,7 +17,7 @@ export default function Logo({ dark = false }: LogoProps) {
             dark ? "text-white" : "text-slate-900"
           }`}
         >
-          Davibams Tech
+          Davibams Tech Solutions
         </p>
 
         <p

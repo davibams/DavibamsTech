@@ -23,12 +23,12 @@ export default function ProjectCard({
   return (
     <article className="group overflow-hidden rounded-3xl border border-slate-200 bg-white transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
       <div className="relative h-64 overflow-hidden">
-        <Image
+        {image ? (<Image
           src={image}
           alt={title}
           fill
           className="object-cover transition-transform duration-500 group-hover:scale-105"
-        />
+        />) : <div className="flex min-h-48 h-full items-center justify-center bg-gradient-to-br from-slate-950 to-blue-900 p-8 text-center text-2xl font-bold text-white">{title}</div>}
       </div>
 
       <div className="space-y-5 p-8">

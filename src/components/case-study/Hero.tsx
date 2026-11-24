@@ -53,13 +53,13 @@ export default function Hero({
           {/* Project Image */}
           <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-xl">
 
-            <Image
+            {image ? (<Image
               src={image}
               alt={title}
               width={900}
               height={700}
               className="h-auto w-full object-cover"
-            />
+            />) : <div className="flex min-h-48 h-full items-center justify-center bg-gradient-to-br from-slate-950 to-blue-900 p-8 text-center text-2xl font-bold text-white">{title}</div>}
 
           </div>
 
